@@ -1,6 +1,6 @@
 # 🖥 Enterprise Infrastructure Dashboard — Тестовое задание
 
-<img src="readmeImg/preview.png" alt="Скриншот панели" width="800"/>
+<img src="readmeImg/preview1.png" alt="Скриншот панели" width="800"/>
 
 ## 🌟 Реализованный функционал
 
