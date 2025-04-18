@@ -1,4 +1,4 @@
-import { Metric, Application, FlatGroup, Group } from "../types/index";
+import { FlatGroup, Group } from "../types/index";
 export const getMetricColorClass = (value: number): string => {
     if (value > 95) return "danger";
     if (value > 85) return "warning";
@@ -20,7 +20,6 @@ export function transformFlatGroups(flatGroups: FlatGroup[]): Group[] {
     const groupMap = new Map<number, Group>();
 
     for (const item of flatGroups) {
-        // Создаем группу, если еще не создана
         if (!groupMap.has(item.id)) {
             groupMap.set(item.id, {
                 id: item.id,
@@ -58,7 +57,6 @@ export function transformFlatGroups(flatGroups: FlatGroup[]): Group[] {
             group.nodes.push(node);
         }
 
-        // Добавляем application, если есть и еще не добавлено
         if (
             item.applicationId &&
             item.applicationName &&
