@@ -1,0 +1,27 @@
+.applicationsBlock {
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .applicationsList {
+        list-style: none;
+        padding: 0;
+
+        .applicationItem {
+            padding: 0.5rem;
+            background-color: #1b1b1b;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .noNode {
+        color: #6c757d;
+        font-style: italic;
+    }
+}
