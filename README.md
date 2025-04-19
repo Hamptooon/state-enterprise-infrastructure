@@ -20,3 +20,28 @@
 | **Redux Toolkit** | Централизованное состояние |
 | **SCSS Modules**  | Модульные стили            |
 | **Chart.js**      | Визуализация метрик        |
+
+## 🚀 Запуск проекта
+
+### Установка
+
+```bash
+git clone https://github.com/Hamptooon/state-enterprise-infrastructure.git
+cd state-enterprise-infrastructure
+
+cd backend
+npm install
+
+cd ../frontend
+npm install
+```
+
+### Запуск
+
+```bash
+# Запуск сервера (backend)
+npm start
+
+# Запуск клиента (frontend)
+npm run start
+```
